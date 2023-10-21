@@ -109,7 +109,6 @@ nbformat==5.9.2
 nest-asyncio==1.5.8
 notebook==7.0.6
 notebook_shim==0.2.3
-numpy @ file:///D:/bld/numpy_1653325517362/work
 oauthlib==3.2.2
 opt-einsum==3.3.0
 oscrypto==1.3.0
@@ -181,7 +180,6 @@ tensorflow-intel==2.14.0
 tensorflow-io-gcs-filesystem==0.31.0
 termcolor==2.3.0
 terminado==0.17.1
-threadpoolctl @ file:///home/conda/feedstock_root/build_artifacts/threadpoolctl_1689261241048/work
 tinycss2==1.2.1
 toml==0.10.2
 tomli==2.0.1
