@@ -83,19 +83,19 @@ if st.button("Predict"):
     from snowflake.connector import connect
 
     # Load connection parameters from creds.json
-    with open('creds.json') as f:
-        data = json.load(f)
+    # with open('creds.json') as f:
+    #     data = json.load(f)
 
-    user = data['user']
-    password = data['password']
-    account = data['account']
+    # user = data['user']
+    # password = data['password']
+    # account = data['account']
 
 
     # Create the Snowflake connection
     connection = connect(
-        user=user,
-        password=password,
-        account=account,
+        user='ARYUCK01',
+        password='Pass@123',
+        account="otqkqbf-uob82367",
         warehouse='FE_AND_INFERENCE_WH',
         database='tpcds_xgboost',
         schema='demo'
