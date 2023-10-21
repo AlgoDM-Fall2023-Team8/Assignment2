@@ -6,8 +6,13 @@ import json
 
 # %%
 # Create a session to Snowflake with credentials
-with open("creds.json") as f:
-    connection_parameters = json.load(f)
+# with open("creds.json") as f:
+#     connection_parameters = json.load(f)
+connection_parameters={
+  "account": "otqkqbf-uob82367",
+  "user": "ARYUCK01",
+  "password": "Pass@123"
+}
 session = Session.builder.configs(connection_parameters).create()
 session.use_warehouse('anarsak_WH')
 session.use_database('anarsak_DEV')
