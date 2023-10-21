@@ -62,7 +62,6 @@ google-pasta==0.2.0
 grpcio==1.59.0
 h5py==3.10.0
 idna==3.4
-imbalanced-learn==0.10.1
 importlib-metadata==6.8.0
 importlib-resources==6.1.0
 ipykernel==6.25.2
@@ -137,11 +136,10 @@ pyparsing==3.1.1
 python-dateutil==2.8.2
 python-json-logger==2.0.7
 pytimeparse==1.1.8
-pytorch-tabnet==3.1.1
 pytz==2023.3.post1
 
 
-scikit-learn==1.2.0
+scikit-learn==1.2.1
 scipy==1.10.1
 seaborn==0.12.2
 Send2Trash==1.8.2
