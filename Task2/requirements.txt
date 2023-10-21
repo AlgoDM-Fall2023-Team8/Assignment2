@@ -20,7 +20,7 @@
 - pytorch-tabnet=3.1.1
 - snowflake-snowpark-python
 - snowflake-connector-python
-- snowflake=0.0.4
+- snowflake
 
 - snowflake-ml-python=1.0.10
 
