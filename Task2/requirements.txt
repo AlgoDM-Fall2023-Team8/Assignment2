@@ -195,10 +195,10 @@ zipp==3.17.0
 
 numpy==1.23.5
 scipy==1.10.1
-imbalanced-learn==0.10.1
+
 
 torch==1.10.2
 xgboost==1.7.3
-pytorch-tabnet==3.1.1
+
 snowflake-snowpark-python
 snowflake_ml_python
