@@ -162,7 +162,6 @@ tensorboard==2.14.1
 tensorboard-data-server==0.7.1
 tensorflow==2.14.0
 tensorflow-estimator==2.14.0
-tensorflow-intel==2.14.0
 tensorflow-io-gcs-filesystem==0.31.0
 termcolor==2.3.0
 terminado==0.17.1
@@ -197,7 +196,7 @@ zipp==3.17.0
 numpy==1.23.5
 scipy==1.10.1
 imbalanced-learn==0.10.1
-tensorflow
+
 torch==1.10.2
 xgboost==1.7.3
 pytorch-tabnet==3.1.1
