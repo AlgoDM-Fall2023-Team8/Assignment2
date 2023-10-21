@@ -98,3 +98,44 @@ st.title("Time Series Data")
 
 # Display the plot in Streamlit
 st.pyplot(create_time_series_plot(pandas_dataframe))
+#Analomy
+
+session.sql('USE WAREHOUSE AD_FORECAST_DEMO_WH').collect()
+st.write("Anomaly dectecting for  12000 impression")
+query = '''
+ CALL impression_anomaly_detector!DETECT_ANOMALIES(
+  INPUT_DATA => SYSTEM$QUERY_REFERENCE('select ''2022-12-06''::timestamp as day, 12000 as impressions'),
+  TIMESTAMP_COLNAME =>'day',
+  TARGET_COLNAME => 'impressions'
+);
+'''
+impression_anomaly_detector = session.sql(query).collect()
+
+st.write(impression_anomaly_detector)
+
+st.write("Anomaly dectecting for  120000 impression")
+
+query = '''
+ CALL impression_anomaly_detector!DETECT_ANOMALIES(
+  INPUT_DATA => SYSTEM$QUERY_REFERENCE('select ''2022-12-06''::timestamp as day, 120000 as impressions'),
+  TIMESTAMP_COLNAME =>'day',
+  TARGET_COLNAME => 'impressions'
+);
+'''
+impression_anomaly_detector = session.sql(query).collect()
+
+st.write(impression_anomaly_detector)
+
+st.write("Anomaly dectecting for  60000 impression")
+
+query = '''
+ CALL impression_anomaly_detector!DETECT_ANOMALIES(
+  INPUT_DATA => SYSTEM$QUERY_REFERENCE('select ''2022-12-06''::timestamp as day, 60000 as impressions'),
+  TIMESTAMP_COLNAME =>'day',
+  TARGET_COLNAME => 'impressions'
+);
+'''
+impression_anomaly_detector = session.sql(query).collect()
+
+st.write(impression_anomaly_detector)
+
