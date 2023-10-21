@@ -1,21 +1,21 @@
 # This file may be used to create an environment using:
 # $ conda create --name <env> --file <this file>
 # platform: osx-64
-python=3.9.18
-scikit-learn=1.2.2
-seaborn=0.12.2
-pandas=1.5.3
-cloudpickle=2.0.0
-joblib=1.1.1
-jupyter=1.0.0
-cachetools=4.2.2
-matplotlib=3.7.1
-numpy=1.23.5
-scipy=1.10.1
-imbalanced-learn=0.10.1
+python==3.9.18
+scikit-learn==1.2.2
+seaborn==0.12.2
+pandas==c1.5.3
+cloudpickle==2.0.0
+joblib==1.1.1
+jupyter==1.0.0
+cachetools==4.2.2
+matplotlib==3.7.1
+numpy==1.23.5
+scipy==1.10.1
+imbalanced-learn==0.10.1
 tensorflow
-torch=1.10.2
-xgboost=1.7.3
-pytorch-tabnet=3.1.1
+torch==1.10.2
+xgboost==1.7.3
+pytorch-tabnet==3.1.1
 snowflake-snowpark-python
 snowflake_ml_python
