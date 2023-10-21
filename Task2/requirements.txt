@@ -1,7 +1,6 @@
 # This file may be used to create an environment using:
 # $ conda create --name <env> --file <this file>
 # platform: osx-64
-python==3.9.18
 scikit-learn==1.2.2
 seaborn==0.12.2
 pandas==c1.5.3
