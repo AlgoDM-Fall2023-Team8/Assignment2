@@ -137,7 +137,7 @@ if option1=="Anamoly":
 
   
     impression_anomaly_detector = session.sql(query).collect()
-    st.write(f'''Anomaly dectecting for  {impressions_count} impression''')
+    
 
     st.write(impression_anomaly_detector)
 
