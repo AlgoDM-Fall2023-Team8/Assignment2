@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from snowflake.connector import connect
 from snowflake.ml.modeling.preprocessing import OneHotEncoder
-
+ 
 # Streamlit interface
 st.title("Customer Life Time Value")
 
