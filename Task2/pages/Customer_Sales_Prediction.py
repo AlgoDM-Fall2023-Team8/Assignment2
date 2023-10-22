@@ -4,7 +4,7 @@ from snowflake.connector import connect
 from snowflake.ml.modeling.preprocessing import OneHotEncoder
 
 # Streamlit interface
-st.title("Customer Sales Prediction")
+st.title("Customer Life Time Value")
 
 # Input fields
 import streamlit as st
