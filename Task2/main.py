@@ -10,7 +10,7 @@ st.title("STREAM FLAKE ❤️‍🔥")
 
 st.markdown(
     """
-### Assignment2 👋
+### Assignment 2 👋
 ### Welcome to the multipage app!
 ### The setup
   * Create a conda environment using the provided environment.yml file.
@@ -20,5 +20,7 @@ st.markdown(
   * Load Jupyter or equivalent notebook to begin executing the notebook.
 
   [Code Lab Link](https://docs.google.com/document/d/1tR45WPhxRbq6_FXf4MKTivlmEEWpQe0XEKOBG449s_0/edit?usp=sharing)
+  [Part 1 ](https://imaryak.streamlit.app/)
+
 """
 )
