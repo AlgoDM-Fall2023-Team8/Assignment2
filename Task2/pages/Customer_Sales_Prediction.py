@@ -39,7 +39,7 @@ C_BIRTH_YEAR = col2.number_input("C_BIRTH_YEAR", min_value=1900, max_value=2023,
 CD_DEP_COUNT = col2.number_input("CD_DEP_COUNT", min_value=0, value=1)
 
 # Total Sales
-TOTAL_SALES = col2.number_input("TOTAL_SALES", min_value=0, value=20000)
+TOTAL_SALES = col2.number_input("Income", min_value=0, value=20000)
 
 if st.button("Predict"):
     # Create a dictionary for one-hot encoding
