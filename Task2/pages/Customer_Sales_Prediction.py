@@ -69,7 +69,6 @@ if st.button("Predict"):
     # Create a DataFrame from the input data
     input_data_df = pd.DataFrame(input_data_dict)
     st.write("Input Data:")
-    st.write(input_data_df)
 
 
     # Create a DataFrame from the input data
@@ -109,4 +108,4 @@ if st.button("Predict"):
         cursor.execute(f"SELECT TPCDS_PREDICT_CLV({','.join(map(str, input_data_df.values[0]))})")
         prediction = cursor.fetchone()[0]
 
-    st.title(f"Predicted Total Sales: {prediction}")
+    st.write(f"Predicted Total Sales: {prediction}")
