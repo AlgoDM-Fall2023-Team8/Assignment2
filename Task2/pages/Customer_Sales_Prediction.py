@@ -68,7 +68,6 @@ if st.button("Predict"):
 
     # Create a DataFrame from the input data
     input_data_df = pd.DataFrame(input_data_dict)
-    st.write("Input Data:")
 
 
     # Create a DataFrame from the input data
