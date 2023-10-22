@@ -74,7 +74,6 @@ if st.button("Predict"):
 
     # Create a DataFrame from the input data
     input_data_df = pd.DataFrame(input_data_dict)
-    print(input_data_df)
 
     # Connect to Snowflake
 
@@ -104,11 +103,10 @@ if st.button("Predict"):
 
     # Now, you have a connection to Snowflake using the parameters from creds.json
     input_data_df = pd.DataFrame(input_data_dict)
-    print(input_data_df)
 
         # Call Snowflake UDF
     with connection.cursor() as cursor:
         cursor.execute(f"SELECT TPCDS_PREDICT_CLV({','.join(map(str, input_data_df.values[0]))})")
         prediction = cursor.fetchone()[0]
 
-    st.write(f"Predicted Total Sales: {prediction}")
+    st.title(f"Predicted Total Sales: {prediction}")
