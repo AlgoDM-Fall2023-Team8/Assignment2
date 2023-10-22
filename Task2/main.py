@@ -5,14 +5,13 @@ st.set_page_config(
     page_icon="👋",
 )
 
-st.write("# Welcome to Streamlit! 👋")
+st.title("STREAM FLAKE ❤️‍🔥")
 
-st.sidebar.success("STREAM FLAKE ❤️‍🔥")
 
 st.markdown(
     """
-# Assignment2  ❤️‍🔥
-## Welcome to the multipage app!
+### Assignment2 👋
+### Welcome to the multipage app!
 ### The setup
   * Create a conda environment using the provided environment.yml file.
     - `conda env create -f environment.yml`
