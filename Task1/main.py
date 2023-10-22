@@ -47,7 +47,8 @@ session.sql('USE WAREHOUSE AD_FORECAST_DEMO_WH').collect()
 st.title("Forecasting and Anamoly detection ")
 
 
-option1 = st.selectbox("Which one would you like to do ?", ["Forecasting", "Anamoly"],placeholder="Select an option...")
+option1 = st.selectbox("Which one would you like to do ?", ["Forecasting", "Anamoly"],index=None,
+   placeholder="Select an option...")
 
 if option1=="Forecasting":
     original_dataframe=session.sql('select * from daily_impressions;').collect()
